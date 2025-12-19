@@ -12,6 +12,7 @@ Linux was probably one of the grandest projects at the time and while building i
 
 As you learn more about software you will see the idea of versions comes up A LOT. Everything is tracked at different versions including: Programming languages, libraries even this code base. But don't worry we will learn about different tools for simplifying all of it. The first one being git!
 
+## Git
 Now, you probably noticed that this tutorial is on "github" but why do I keep saying "git"? Well that's because "git" is the open source standard for tracking code bases, while "github" is a cloud platform that makes it easy to share and store the git histories in the cloud. So in order to pull code from github you need "git" and to store code on "github" you need a github account. We will focus on the former in this tutorial.
 
 Okay but before we install git we need to learn about the terminal (the place we will be using git). So, for a lot of software products an interface actually isn't all that important. The important thing is speed and what you will come to see is that a pretty interface can get in the way of that. That's why for a lot of coding products we like to do everything in the terminal which is basically a text only way of speaking directly to the operating system (pretty hardcore I know). If you're on a mac you can access this by simply searching for "terminal" in your search bar and opening the app. You can think of the terminal as the fastest most direct way to talk to your machine (without going through the ui). There are tons of commands and ways to customize things but for now there are only a few commands I want you to know:
@@ -45,3 +46,8 @@ If you don't have update access then you can create a fork and clone the fork to
 You can then make your changes, see the changed files with `git status` add them with `git add .` (. adds all the changes but sometimes you want to be more granular by naming the files you want to add directly). Commit the changed with `git commit -m'a message about your changes'` and then `git push` or `git push --set-upstream origin your-name/your-update` if you had the update access. 
 
 Now your changes are in github but how do you merge them into the master version so everyone can now get the latest and greatest. Well go to the original repo for this tutorial. Click on the `Pull requests` tab and create a new pull request. Admins in the repo can then look at the changes and approve the pull request if they like the additions. They may also request some changes before merging.
+
+## Summary
+- You should now have a basic understanding of the terminal and be able to navigate your file system with cd/ls. 
+- Be able to install tools with brew
+- Have a basic understanding of git and be able to pull code
