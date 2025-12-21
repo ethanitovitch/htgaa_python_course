@@ -14,11 +14,15 @@ Linux was probably one of the grandest projects at the time and while building i
 
 ![Linus Torvalds](../../images/linus.png)As you learn more about software you will see that the idea of versions comes up A LOT. Everything is tracked at different versions including: programming languages, libraries, and even this codebase. But don't worry, we will learn about different tools for simplifying all of it. The first one being git!
 
-## Git
+## Git vs Github
 
-Now, you probably noticed that this tutorial is on "github", but why do I keep saying "git"?
+Now, you’ve probably noticed that you accessed this tutorial on “github”, but why do I keep saying “git”?
 
-Well, that's because "git" is the open source standard for tracking codebases, while "github" is a cloud platform that makes it easy to share and store the git histories in the cloud. So in order to pull code from github you need "git" installed on your machine and to store code on "github" you need a github account. We will focus on the former in this tutorial.
+Well, that’s because they are two different but related things. Git is the open source standard for tracking changes to codebases, and it lives on your computer. Github is a cloud platform on the internet where you store and share code and their version histories with other people.
+
+So in order to pull code from github you need "git" installed on your machine and to store code on "github" you need a github account. We will focus on the former in this tutorial.
+
+## The Terminal
 
 Before we install git we need to learn about the terminal, which is the place we will be using git. So, for a lot of software products an interface actually isn't all that important. The important thing is speed and what you will come to see is that a pretty interface can get in the way of that.
 
@@ -36,15 +40,33 @@ You can think of the terminal as the fastest, most direct way to talk to your ma
 
 As an exercise, try exploring your machine. See if you can find your way to a folder in your desktop, then back up. Don't worry about getting lost, you can always find your way back to where you started with `cd ~`
 
+## Package Managers
+
 Now back to git... wait, homebrew first! Now that you know some basic commands on the terminal, it's time to take it up a notch. Sometimes we want to add new commands like say, git! Well, how do we get git on our terminal at the most up to date version? (even git has multiple versions)
 
 That's where a package manager comes in. Homebrew is the most well known one for mac. To install it visit https://brew.sh/ then copy the install command and paste it into your terminal and hit enter. Congrats, you have just installed your first new tool, and a pretty powerful tool at that since homebrew is a tool for installing other tools! Every new tool from here will be smooth sailing. For instance, let's install git. It's as easy as `brew install git` (you may need to restart your terminal first)
 
 The git tool comes with a lot of commands for managing the versions of your codebase. As always you can run `git --help` to see the types of things you can do, but for now the only one I want to focus on is the clone command. This lets you pull code from github onto your machine (ahuh our objective!). But first, some organization.
 
+## Cloning the Repo
+
 Personally, I like to organize my codebases in a Projects folder on my Desktop, so let's set that up for you.
 
-To make sure we're all in the same spot run `cd ~`. Then, let's go into your desktop with `cd Desktop`. Now for the fun part: let's create a folder for our git repos with `mkdir Projects` (feel free to name it whatever you like best). Now, let's go into the projects folder with `cd Projects` (or whatever you called it), Then `mkdir HtgaaBootcamp` and then cd inside. For the grand finale, to pull the codebase, go to home page of this repo on github and click the code dropdown in green. Copy the url and run `git clone URL` (replacing URL with the url you copied) and boom you should now have the git repo installed locally. You can confirm this with our friend `ls` and you can go into the repo with `cd htgaa_python_course`
+To make sure we're all in the same spot run `cd ~`. 
+
+Then, let's go into your desktop with `cd Desktop`. 
+
+Now for the fun part: let's create a folder for our git repos with `mkdir Projects` (feel free to name it whatever you like best). 
+
+Now, let's go into the projects folder with `cd Projects` (or whatever you called it), 
+
+Then `mkdir HtgaaBootcamp` and  `cd HtgaaBootcamp` into the newly created folder. 
+
+For the grand finale, to pull the codebase, go to home page of this repo on github and click the code dropdown in green. 
+
+Copy the url and run `git clone URL` (replacing URL with the url you copied) and boom you should now have the git repo installed locally. 
+
+You can confirm this with our friend `ls` and you can go into the repo with `cd htgaa_python_course`
 
 ## Advanced (optional)
 
