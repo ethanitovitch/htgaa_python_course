@@ -1,7 +1,7 @@
 # Chapter 2 - Python & Running Code 
 
 ## Objective
-- By the end of this chapter you will know how to manage python on your local machine and run simple scripts
+By the end of this chapter you will know how to manage python on your local machine and run simple scripts
 
 ## Intro
 So at this point we know how to install tools and run them in our terminal but what if we wanted to run a set of steps instead of manually running one thing at a time. Well that's where programming languages come in. Programming languages let you define a set of steps and then give that to the computer to run in order. 

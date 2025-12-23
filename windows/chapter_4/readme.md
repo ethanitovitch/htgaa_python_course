@@ -19,7 +19,7 @@ Really what we'd want is an environment per project that manages all the librari
 
 If the above was a little too complicated (I know it was for me when I first started learning about this stuff) I hope going through what this looks like in practice might clear some things up. 
 
-Okay so let's set up our first virtual environment. First, in the terminal, cd into the root of this project (into `~/Desktop/Projects/PythonCourse` you can confirm you're at the right spot by running `pwd` in the terminal). Then create a virtual environment named `env` with `python -m venv env`. Now let's activate the virtual environment with `source env/bin/activate`. Done! You can confirm the virtual environment is activated by noticing the (env) in your terminal. You can deactivate the environment by entering `deactivate` into your terminal. But keep the env activated for now.
+Okay so let's set up our first virtual environment. First, in the terminal, cd into the root of this project (into `C:\Users\YourUsername\Desktop\Projects\PythonCourse` - replace `YourUsername` with your actual Windows username, and you can confirm you're at the right spot by running `cd` in Command Prompt or `pwd` in PowerShell). Then create a virtual environment named `env` with `python -m venv env`. Now let's activate the virtual environment. If you're using PowerShell, run `env\Scripts\Activate.ps1`. If you're using Command Prompt, run `env\Scripts\activate.bat`. Done! You can confirm the virtual environment is activated by noticing the (env) in your terminal. You can deactivate the environment by entering `deactivate` into your terminal. But keep the env activated for now.
 
 ![Env](../../images/env.png)
 
@@ -74,10 +74,11 @@ But back to sharing, so now that you've printed the dependencies to the console 
 
 You might be thinking that copy pasting from your terminal to a file might be a bit tedious and you're right! There's an easier way to do it with the following command `pip freeze > requirements.txt`. This takes the output of `freeze` and redirects it (>) to `requirements.txt`
 
-Okay but what will our friends do with this file. Well let's imagine we're a new person who just pulled the codebase. To start the simulation deactivate your virtual env with `deactivate`. Then to simulate their experience let's create a new virtual environment with `python -m venv new-env` (typically we call our envs "env" but since we already have an "env" env in this project I called it "new-env"). Go ahead and activate new-env with `source new-env/bin/activate`. Now install the dependencies from the requirements file with `pip install -r requirements.txt`
+Okay but what will our friends do with this file. Well let's imagine we're a new person who just pulled the codebase. To start the simulation deactivate your virtual env with `deactivate`. Then to simulate their experience let's create a new virtual environment with `python -m venv new-env` (typically we call our envs "env" but since we already have an "env" env in this project I called it "new-env"). Go ahead and activate new-env. If you're using PowerShell, run `new-env\Scripts\Activate.ps1`. If you're using Command Prompt, run `new-env\Scripts\activate.bat`. Now install the dependencies from the requirements file with `pip install -r requirements.txt`
 
 Amazing, we now have a way to recreate the same virtual environment on two separate machines! For a grand finale, feel free to rerun the `main.py` file in chapter_4.
 
 ## Summary
 - You should now have a basic understanding of what a virtual environment is, how to create one and how to install libraries
-- You should now feel comfortable pulling a friend's codebase and recreating their virtual env. 
+- You should now feel comfortable pulling a friend's codebase and recreating their virtual env.
+

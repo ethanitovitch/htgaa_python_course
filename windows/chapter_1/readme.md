@@ -1,7 +1,7 @@
 # Chapter 1 - Git & Pulling code
 
 ## Objective
-- By the end of this chapter you will know how to pull code from github onto your machine using git
+By the end of this chapter you will know how to pull code from github onto your machine using git
 
 ## Intro
 Okay lets start with git, many people know Linus Torvalds as the creator of the linux operating system, what a lot of people don't know is that Linus Torvalds also created git.

@@ -1,7 +1,7 @@
 # Chapter 3 - IDE & Python Basics
 
 ## Objective
-- By the end of this chapter you will know how to open your code in a development environment, install apps to make your life easy and write basic python scripts
+By the end of this chapter you will know how to open your code in a development environment, install apps to make your life easy and write basic python scripts
 
 ## Intro
 So far, we've setup git, installed python and ran some basic python commands. Running python in the shell is great for basic commands but as we start writing bigger scripts (really anything more than a few lines) it's helpful to save the scripts to a file and run the file instead of the commands individually. As projects grow we even need to break up our scripts into multiple files over multiple folders. Organizing and visualizing these files can get messy so it's helpful to use an interactive development environment or IDE for short which solves these problems for us. Not only do these help with code organization but they also come with marketplaces for bringing in addons to help with writing code. Modern IDEs even come with built-in AI chats so you can highlight a section of your code and ask your favorite llm about it (game changer!). So let's get started setting up our first IDE
