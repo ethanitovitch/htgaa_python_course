@@ -4,7 +4,7 @@
 By the end of this chapter you should feel comfortable debugging and using the `breakpoint()` function
 
 ## Introduction
-So up to now you've done a ton of work and I'm happy to say the worst is behind us. For this last chapter, I wanted to go over what I think is the most underrated feature of python or really any dynamic programming language. This will be super quick but so important I figured I'd dedicate a whole chapter to it. That feature is the `breakpoint()` function
+So up to now you've done a ton of work and I'm happy to say the worst is behind us. Pat yourself on the back! For this last chapter, I wanted to go over what I think is the most underrated feature of python or really any dynamic programming language. This will be super quick but so important I figured I'd dedicate a whole chapter to it. That feature is the `breakpoint()` function
 
 ## Breakpoint
 In chapter_2 I spoke about how dynamic programming languages run the code line by line. This can be dangerous because it allows us to run potentially incorrect code but at the same time, it also allows us to do crazy things like open up a python shell in our terminal and give it the lines to run on the fly. This allows us to do something even crazier like open a python shell from anywhere in your code using `breakpoint()`!!!
@@ -24,6 +24,8 @@ Okay let's continue with `n` and then `n` again. Now we're at a function call. W
 Then hit `n`, `n` & `n` to get to the right line. We're now at line 4. Let's see the variables `p a` & `p b`. Ohhh I see, divide switched the variables around. Easy fix... don't do that. You can now exit the breakpoint shell with `c` (for continue) or `exit()`
 
 Pretty simple example but I hope you see the power of the breakpoint and how easy it makes debugging code. Breakpoint comes with a lot of commands but the ones I've shown here are the most common ones I use.
+
+But yah, that's all I have for you! If you made it this far, congrats and thank you for listening to my rambling, I hope it was useful! Good luck with the rest of the HTGAA course.
 
 ## Summary
 - You should now feel comfortable debugging code with the `breakpoint()` function call and feel my disappointment if you debug with print statements lol

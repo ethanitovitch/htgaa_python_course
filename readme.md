@@ -13,7 +13,6 @@
 - Chapter 3. IDE & Python Basics
 - Chapter 4. Environments & Libraries
 - Chapter 5. The greatest line of code python has to offer
-- Chapter 6. Where to go from here
 
 ## Lets Get Started
 - To get started, open the `chapter_1` folder and checkout the `readme.md`
