@@ -1,10 +1,13 @@
 # HTGAA Pre Bootcamp Python Course
 
 ## Introduction
-- Welcome HTGAA students, there's a ton of content to cover in this course so I'll try to make this as quick as possible. My goal in this course is not so much to teach you the fundamentals of python programming (things are pretty easy with AI these days) but more to help you setup your projects and understand what goes into a python project.
-- After this course you should feel comfortable setting up coding environments, pulling peoples code and debugging issues. For the rest, you can find a lot of help online or ask your favorite llm for help.
-- This repository (or repo as we call it) is split into different folders first for your operating system - windows or mac and then folders for each chapter. Each chapter has its own readme with instructions and exercises to follow. The chapters build on top of each other but feel free to go through them however you want.
-- To get the most out this course and really any programming course you should definitely run the examples and experiment. You don't learn by learning, you learn by doing.
+Welcome HTGAA students, there's a ton of content to cover in this course so I'll try to make this as quick as possible. My goal in this course is not so much to teach you the fundamentals of python programming (there are more python specific tutorials to come + it's pretty easy to get help with AI these days) but more to help you get a good sense of what things you need to get started with python and setup your projects.
+
+After this course you should feel comfortable setting up coding environments, pulling peoples code and debugging issues. For the rest, you can find a lot of help online or ask your favorite llm for help.
+
+This repository (or repo as we call it) is split into different folders first for your operating system - windows or mac and then folders for each chapter. Each chapter has its own readme with instructions and exercises to follow. The chapters build on top of each other but feel free to go through them however you want.
+
+To get the most out this course and really any programming course in general, you should definitely run the examples and experiment. You don't learn by learning, you learn by doing.
 
 
 ## Contents
@@ -15,4 +18,4 @@
 - Chapter 5. The greatest line of code python has to offer
 
 ## Lets Get Started
-- To get started, open the `chapter_1` folder and checkout the `readme.md`
+To get started, open the `chapter_1` folder for your operating system and checkout the `readme.md`
