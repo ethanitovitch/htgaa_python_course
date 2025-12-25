@@ -54,7 +54,7 @@ Personally, I like to organize my codebases in a Projects folder on my Desktop, 
 
 To make sure we're all in the same spot run `cd ~`. 
 
-Then, let's go into your desktop with `cd Desktop`. 
+Then, let's go into your desktop with `cd Desktop` (you may have to cd into `OneDrive` first). 
 
 Now for the fun part: let's create a folder for our git repos with `mkdir Projects` (feel free to name it whatever you like best). 
 
