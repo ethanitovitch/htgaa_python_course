@@ -19,7 +19,7 @@ Really what we'd want is an environment per project that manages all the librari
 
 If the above was a little too complicated (I know it was for me when I first started learning about this stuff) I hope going through what this looks like in practice might clear some things up. 
 
-Okay so let's set up our first virtual environment. First, in the terminal, cd into the root of this project (into `~/Desktop/Projects/PythonCourse` you can confirm you're at the right spot by running `pwd` in the terminal). Then create a virtual environment named `env` with `python -m venv env`. Now let's activate the virtual environment with `source env/bin/activate`. Done! You can confirm the virtual environment is activated by noticing the (env) in your terminal. You can deactivate the environment by entering `deactivate` into your terminal. But keep the env activated for now.
+Okay so let's set up our first virtual environment. First, in the terminal, cd into the root of this project (into `~/Desktop/Projects/HtgaaBootcamp/htgaa_python_course` you can confirm you're at the right spot by running `pwd` in the terminal). Then create a virtual environment named `env` with `python -m venv env`. Now let's activate the virtual environment with `source env/bin/activate`. Done! You can confirm the virtual environment is activated by noticing the (env) in your terminal. You can deactivate the environment by entering `deactivate` into your terminal. But keep the env activated for now.
 
 ![Env](../../images/env.png)
 
