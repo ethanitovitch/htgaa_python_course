@@ -62,6 +62,8 @@ Pretty handy, right!
 
 Now python can be run as a shell but if the commands you want to run are saved in a file you can run the code with `python FILE_NAME`. 
 
+You can exit the shell with `exit()`
+
 ## Exercises:
 
 - See what else you can do in the python shell. See what other math operations are available.

@@ -25,7 +25,7 @@ Okay, enough of my rambling, let's run some python code.
 
 To do so, we need to install python on our machine. Now, I know what you're thinking... you can just install it with winget or Chocolatey but there's a catch. 
 
-As of writing this, python is at version `3.14` and you might start a project using version `3.14` tomorrow, but then in a few years the latest and greatest might be version `5.10` which you install on your machine. You then come back to your project which you built using version `3.14` and you run into the most classic error in software: the classic "wait I didn't change any code why is it not working all of a sudden". The reason being that code written with version `3.14` might not run with python `5.10`. 
+As of writing this, python is at version `3.13` and you might start a project using version `3.13` tomorrow, but then in a few years the latest and greatest might be version `5.10` which you install on your machine. You then come back to your project which you built using version `3.13` and you run into the most classic error in software: the classic "wait I didn't change any code why is it not working all of a sudden". The reason being that code written with version `3.13` might not run with python `5.10`. 
 
 The solution: We need a way to easily switch between different versions of a programming language (see... more versions!). Whenever you want to use a new language the first thing you should look for is the "language version manager". And of course python has one. It's called `pyenv-win` and this is what we will install!
 
@@ -34,16 +34,17 @@ To install pyenv-win, you'll need git first (which you should already have from 
 - `[System.Environment]::SetEnvironmentVariable('PYENV_ROOT',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")`
 - `[System.Environment]::SetEnvironmentVariable('PYENV_HOME',$env:USERPROFILE + "\.pyenv\pyenv-win\","User")`
 - `[System.Environment]::SetEnvironmentVariable('path', $env:USERPROFILE + "\.pyenv\pyenv-win\bin;" + $env:USERPROFILE + "\.pyenv\pyenv-win\shims;" + [System.Environment]::GetEnvironmentVariable('path', "User"), "User")`
+- `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned`
 
 After running these, close and reopen your terminal. 
 
-As always, you can see the different commands pyenv has with `pyenv --help` but let's go ahead and install python. 
+You can see the different commands pyenv has by running `pyenv` but let's go ahead and install python. 
 
-As of writing this, the latest version is `3.14.2` which you can install with `pyenv install 3.14.2`. 
+As of writing this, the latest version is `3.13.7` which you can install with `pyenv install 3.13.7`. 
 
-After the installation is complete, you can see all the versions you've installed with `pyenv versions` and you can set a version of python with `pyenv global 3.14.2`. 
+After the installation is complete, you can see all the versions you've installed with `pyenv versions` and you can set a version of python with `pyenv global 3.13.7`. 
 
-You can confirm this worked correctly by running `python --version` and you should see something like `Python 3.14.2` printed to the console. Now, for the record, this won't stop you from running into the "most classic bug" but hopefully if you ever do, you will quickly change the global version and get back to what you were doing.
+You can confirm this worked correctly by running `python --version` and you should see something like `Python 3.13.7` printed to the console. Now, for the record, this won't stop you from running into the "most classic bug" but hopefully if you ever do, you will quickly change the global version and get back to what you were doing.
 
 ## Running Python
 Finally, let's run some python code. 
@@ -67,6 +68,8 @@ In your python shell that's super easy. You could easily run `len("ATGGCTGACCTGT
 Pretty handy, right! 
 
 Now python can be run as a shell but if the commands you want to run are saved in a file you can run the code with `python FILE_NAME`. 
+
+You can exit the shell with `exit()`
 
 ## Exercises:
 
